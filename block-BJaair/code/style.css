@@ -1,0 +1,76 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 2rem auto;
+    background-color: rgb(254, 255, 205);
+}
+
+.card input {
+    margin: 0.5rem 0;
+    border: none;
+    background-color: rgb(254, 255, 205);
+    padding: 0.5rem;
+}
+
+.card .display-category {
+    text-decoration: underline;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card .display-task {
+    font-size: 1.2rem;
+}
+
+.input-card {
+    position: fixed;
+    bottom: 30px;
+    border: 3px solid rgb(255, 181, 181);
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-form input {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 181, 181);
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(252, 159, 159);
+}
