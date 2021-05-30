@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1000px;
+  margin: 3rem auto;
+  gap: 2rem;
+}
+
+i {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: move;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.selection-item {
+  display: flex;
+  width: 300px;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+p {
+  width: 60px;
+  text-align: center;
+}
+
+.box {
+  border: 2px dotted black;
+  height: 100px;
+  width: 100px;
+  margin: 0 2rem;
+}
+
+.box.over {
+  background-color: rgba(5, 174, 252, 0.24);
+}

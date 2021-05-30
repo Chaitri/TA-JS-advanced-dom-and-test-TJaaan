@@ -2,13 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7d51f361a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
     <title>Assessment: Drag and Drop Game</title>
   </head>
   <body>
+    <div class="icons">
+      <i class="fas fa-tree" draggable="true"></i>
+      <i class="fas fa-city" draggable="true"></i>
+      <i class="fas fa-horse" draggable="true"></i>
+      <i class="fas fa-moon" draggable="true"></i>
+      <i class="fas fa-cookie" draggable="true"></i>
+    </div>
+    <div class="selection">
+      <div class="selection-item">
+        <p>Horse</p>
+        <div class="box" id="horse"></div>
+      </div>
+      <div class="selection-item">
+        <p>Moon</p>
+        <div class="box" id="moon"></div>
+      </div>
+      <div class="selection-item">
+        <p>Cookie</p>
+        <div class="box" id="cookie"></div>
+      </div>
+      <div class="selection-item">
+        <p>Tree</p>
+        <div class="box" id="tree"></div>
+      </div>
+      <div class="selection-item">
+        <p>City</p>
+        <div class="box" id="city"></div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
